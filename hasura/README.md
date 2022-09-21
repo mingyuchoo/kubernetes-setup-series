@@ -24,6 +24,13 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP        8m
 
 Secondly, open `http://localhost/ in web browser
 
+## How to delete the Kubernetes deplyment and service
+
+```sh
+$ kubectl delete -f svc.yaml
+$ kubectl delete -f deployment.yaml
+```
+
 # References
 
 - <https://hasura.io/docs/latest/deployment/deployment-guides/kubernetes/>
