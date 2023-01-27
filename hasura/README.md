@@ -8,7 +8,7 @@ change `value: postgres://<username>:<password>@hostname:<port>/<dbname>` in `de
 
 ## How to create the Kubernetes deplyment and service
 
-```sh
+```bash
 $ kubectl create -f deployment.yaml
 $ kubectl create -f service.yaml
 ```
@@ -17,7 +17,7 @@ $ kubectl create -f service.yaml
 
 First of All,  check the kubernetes
 
-```sh
+```bash
 $ kubectl get service
 NAME         TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
 hasura       LoadBalancer   10.96.214.240   localhost     80:30303/TCP   4m
@@ -28,7 +28,7 @@ Secondly, open `http://localhost/ in web browser
 
 ## How to delete the Kubernetes deplyment and service
 
-```sh
+```bash
 $ kubectl delete -f service.yaml
 $ kubectl delete -f deployment.yaml
 ```

@@ -4,20 +4,20 @@
 
 ### Install MicroK8s on Linux
 
-```sh
+```bash
 sudo snap install microk8s --classic
 ```
 Don’t have the `snap` command? Get set up for snaps
 
 ### Check the status while Kubernetes starts
 
-```sh
+```bash
 microk8s status --wait-ready
 ```
 
 ### Turn on the services you want
 
-```sh
+```bash
 microk8s enable dashboard dns registry istio
 ```
 
@@ -26,7 +26,7 @@ Try `microk8s enable --help` for a list of available services and optional featu
 
 ### Start using Kubernetes
 
-```sh
+```bash
 microk8s kubectl get all --all-namespaces
 ```
 
@@ -36,7 +36,7 @@ you can also drive other Kubernetes clusters with it by pointing to the respecti
 
 ### Access the Kubernetes dashboard
 
-```sh
+```bash
 microk8s dashboard-proxy
 ```
 
